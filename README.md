@@ -16,11 +16,11 @@ I wouldn’t use this right now m8s. Just an example of hot-loading when a compo
 -
 
 ## Todo
-- [] clean stuff up
-- [] make sure CSS gets loaded server-side
-- [] set up CSS globals like variables and shit
-- [] add some form of grid system
-- [] make it actually usable as a baseline for projects
+- [ ] clean stuff up
+- [ ] make sure CSS gets loaded server-side
+- [ ] set up CSS globals like variables and shit
+- [ ] add some form of grid system
+- [ ] make it actually usable as a baseline for projects
 
 ## Things to look at and stuff
 - `containers/Main.js` – the main app container, stripped right down as a blank slate
