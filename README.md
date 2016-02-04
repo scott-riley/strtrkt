@@ -13,7 +13,6 @@ I wouldn’t use this right now m8s. Just an example of hot-loading when a compo
 
 - All the great stuff from [React Isomorphic Starterkit](https://github.com/RickWong/react-isomorphic-starterkit)
 - No more InlineStyle stuff, instead Components import their own CSS which gets namespaced all nice and shit
--
 
 ## Todo
 - [ ] clean stuff up
