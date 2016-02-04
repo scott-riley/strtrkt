@@ -1,0 +1,12 @@
+.root {
+  border-radius: 6px;
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 3rem;
+  text-decoration: none;
+}
+
+.primary {
+  color: red;
+}
