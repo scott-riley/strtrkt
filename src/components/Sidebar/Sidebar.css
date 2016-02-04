@@ -1,0 +1,11 @@
+.root {
+  background: black;
+  color: white;
+}
+
+.title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: 'red';
+}
