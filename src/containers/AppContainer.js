@@ -3,7 +3,7 @@ import Transmit from "react-transmit";
 
 import Sidebar from 'components/Sidebar/Sidebar';
 
-export default class Main extends Component {
+export default class AppContainer extends Component {
 	/**
 	 * Runs on server and client.
 	 */
@@ -13,6 +13,7 @@ export default class Main extends Component {
 				<Sidebar />
 				<main>
 					<h1>Dat app do</h1>
+					{this.props.children}
 				</main>
 			</div>
 		);
