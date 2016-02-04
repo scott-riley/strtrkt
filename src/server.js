@@ -49,6 +49,7 @@ try {
 								<meta charset="utf-8">
 								<title>Features</title>
 								<link rel="shortcut icon" href="/favicon.ico">
+								<link rel="stylesheet" type="text/css" href="${webserver}/dist/app.css" />
 							</head>
 							<body>
 								<div id="react-root">${reactString}</div>
