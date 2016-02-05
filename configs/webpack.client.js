@@ -1,6 +1,8 @@
-var webpack = require("webpack");
-var path = require("path");
-const cssLoaderConfig = 'modules&importLoaders=1&localIdentName=[name]-[local]-[hash:base64:5]!postcss-loader';
+const webpack = require("webpack");
+const path = require("path");
+const cssLoaderConfig = 'modules&importLoaders=1&localIdentName=[name]-[local]-[hash:base64:5]!postcss';
+const webpackPostcssTools = require('webpack-postcss-tools');
+const map = webpackPostcssTools.makeVarMap('src/global/main.css');
 
 module.exports = {
 	target:  "web",
@@ -36,6 +38,23 @@ module.exports = {
 		],
 		noParse: /\.min\.js/
 	},
+	postcss: [
+    webpackPostcssTools.prependTildesToImports,
+
+    require('postcss-custom-properties')({
+      variables: map.vars
+    }),
+
+    require('postcss-custom-media')({
+      extensions: map.media
+    }),
+
+    require('postcss-custom-selectors')({
+      extensions: map.selector
+    }),
+
+    require('postcss-calc')()
+  ],
 	resolve: {
 		modulesDirectories: [
 			"src",
@@ -48,4 +67,5 @@ module.exports = {
 		__dirname: true,
 		fs:        'empty'
 	}
+
 };

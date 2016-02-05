@@ -41,11 +41,18 @@
     "koa": "1.1.2",
     "koa-proxy": "0.4.1",
     "koa-static": "2.0.0",
+    "normalize.css": "^3.0.3",
+    "postcss-calc": "^5.2.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-custom-selector": "^1.0.0",
+    "postcss-custom-selectors": "^3.0.0",
     "react": "0.14.6",
     "react-dom": "0.14.6",
     "react-inline-css": "2.0.1",
     "react-router": "1.0.3",
-    "react-transmit": "3.1.6"
+    "react-transmit": "3.1.6",
+    "webpack-postcss-tools": "^1.1.1"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",

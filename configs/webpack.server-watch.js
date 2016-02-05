@@ -1,7 +1,9 @@
-var webpack = require("webpack");
-var config = require("./webpack.server.js");
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-const cssLoaderConfig = '-autoprefixer&modules&importLoaders=1&localIdentName=[hash:base64:5]!postcss-loader';
+const webpack = require("webpack");
+const config = require("./webpack.server.js");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const cssLoaderConfig = 'modules&importLoaders=1&localIdentName=[name]-[local]-[hash:base64:5]!postcss';
+const webpackPostcssTools = require('webpack-postcss-tools');
+const map = webpackPostcssTools.makeVarMap('src/global/main.css');
 
 config.cache   = true;
 config.debug   = true;
@@ -26,6 +28,24 @@ config.module.loaders = [
 			test: /\.css$/,
 			loader: ExtractTextPlugin.extract('css-loader?' + cssLoaderConfig),
 	}
+];
+
+config.postcss = [
+	webpackPostcssTools.prependTildesToImports,
+
+	require('postcss-custom-properties')({
+		variables: map.vars
+	}),
+
+	require('postcss-custom-media')({
+		extensions: map.media
+	}),
+
+	require('postcss-custom-selectors')({
+		extensions: map.selector
+	}),
+
+	require('postcss-calc')()
 ];
 
 module.exports = config;

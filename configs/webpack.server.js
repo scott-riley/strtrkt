@@ -1,9 +1,12 @@
-var webpack = require("webpack");
-var path = require("path");
-var fs = require('fs');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require("webpack");
+const path = require("path");
+const fs = require('fs');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const cssLoaderConfig = 'modules&importLoaders=1&localIdentName=[name]-[local]-[hash:base64:5]!postcss';
+const webpackPostcssTools = require('webpack-postcss-tools');
+const map = webpackPostcssTools.makeVarMap('src/global/main.css');
 
-var nodeModules = {};
+const nodeModules = {};
 
 fs.readdirSync('node_modules')
 	.filter(function (x) {
@@ -42,11 +45,28 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-	 			loader: ExtractTextPlugin.extract("style", "css")
+	 			loader: ExtractTextPlugin.extract(`style-loader!css-loader?${cssLoaderConfig}`)
 			}
 		],
 		noParse: /\.min\.js/
 	},
+	postcss: [
+    webpackPostcssTools.prependTildesToImports,
+
+    require('postcss-custom-properties')({
+      variables: map.vars
+    }),
+
+    require('postcss-custom-media')({
+      extensions: map.media
+    }),
+
+    require('postcss-custom-selectors')({
+      extensions: map.selector
+    }),
+
+    require('postcss-calc')()
+  ],
 	externals: nodeModules,
 	resolve: {
 		modulesDirectories: [
