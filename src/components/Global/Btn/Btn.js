@@ -3,10 +3,15 @@ import s from "./Btn.css";
 
 export default class Btn extends Component {
   render() {
-    const {type, href, onClick, children} = this.props;
+    const {type, href, onClick, children, className} = this.props;
+    const classNames = [
+      s.root,
+      s[type],
+      className
+    ].join(' ');
     return (
       href ?
-        <a className={s.root} href={href}>{children}</a>
+        <a className={classNames} href={href}>{children}</a>
       :
         <button className={s.root} onClick={onClick}>
           {children}
@@ -20,4 +25,5 @@ Btn.propTypes = {
   type: PropTypes.string,
   href: PropTypes.string,
   onClick: PropTypes.func,
+  className: PropTypes.string,
 };
