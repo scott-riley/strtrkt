@@ -23,11 +23,12 @@ Also big smooches to [Iest](https://github.com/iest) for help with webpack’s m
 - [ ] set up CSS globals like variables and shit
 - [ ] add some form of grid system
 - [ ] make it actually usable as a baseline for projects
+- [ ] add common configs for postCSS etc. so you don’t have to keep changing both client and server webpack files
 
 ## Things to look at and stuff
 
 ### Separate containers for site and app
-Isomorphic React is pretty lovely for marketing/static sites, lots of boilerplates and starter kits are well set up for one or the other, but I thought I’d have a go at combining the two. There’s a few examples in this repo:
+Isomorphic React is pretty lovely for marketing/static sites. Rich client-side React is great for complex SPAs. Lots of boilerplates and starter kits are well set up for one or the other, but I thought I’d have a go at combining the two. There’s a few examples in this repo:
 
 `containers/AppContainer.js` – a super basic container for any app-specific chrome you might want to use
 
@@ -52,9 +53,22 @@ Touched on this above with the `Btn` example, but if you need a bit more info on
   - We `import s from Btn.css` in our component
   - We can use any of the classes in the CSS file as a prop of `s`:
     - `<Btn className={s.root}>`
-- Thanks to the joys of Webpack and magic, this will result in fully-namespaced CSS classes being applied anywhere you use this method
+- Thanks to the joys of Webpack, local-scope and maybe magic, this will result in fully-namespaced CSS classes being applied anywhere you use this method
 
 This seems super convoluted at first, and Modular CSS isn’t for everyone, but it’s one of those things that you really need to try to see the benefits of. It’s really not as complicated as it seems to get to grips with if you let go of a lot of the CSS paradigms of past.
+
+### Global CSS
+While the idea is to keep as much of the styles namespaced, local-scoped and component-specific, sometimes you just need some global shit. Resets, helpers, basic typographic baselines and global background/text colours are good examples of this and, naturally, if you’re using CSS variables, you want them exposed to any CSS file you might be using.
+
+Global styles here are in the `src/globals` folder. The examples are super sparse right now and need a bit of work; but basically, a few simple variables are set in `src/globals/variables.css`, then `main.css` imports these variables and includes some (pretty dumb) global-scoped styles using the `:global` selector.
+
+Things like grid classes, modifiers/helpers and global typography would also be good candidates for including in the global scope.
+
+### Server-side CSS
+Webpack is configured to bundle all CSS into a single file on the server (`dist/app.css`). This is set up so that everything is namespaced the same as the client-side stuff. React doesn’t like it when your server and client apps produce different markup (it defeats the purpose of universal JS), so it’s important that your namespacing is universal. Right now, making changes to how your CSS is bundled and namespaced means editing multiple webpack configs (sorry).
+
+Other than that, the server side CSS should Just Work™ with local namespacing the same as client-side (minus the Hot Reload love).
+
 
 ## Installation
 
@@ -71,4 +85,4 @@ npm run watch
 
 ## Usage
 
-Run `npm run watch` in terminal. Try changing Main, or Sidebar, or Sidebar.css, or adding a component with its own CSS and throwing it in main. See if you think modular CSS is all lovely and stuff.
+Run `npm run watch` in terminal. Try changing any of the example Components or Containers. Add your own Component with it’s own CSS file and include it in one of the parent components. See if you think modular CSS is all lovely and stuff.
