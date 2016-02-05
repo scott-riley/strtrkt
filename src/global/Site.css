@@ -1,10 +1,1 @@
 @import './main.css';
-
-:global * {
-  box-sizing: border-box;
-}
-
-:global body {
-  background: var(--color-background);
-  color: var(--color-body-copy);
-}
