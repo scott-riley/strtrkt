@@ -1,12 +1,12 @@
 .root {
   border-radius: 6px;
-  background: black;
+  background: var(--color-secondary);
   color: white;
   font-weight: bold;
-  padding: 3rem;
+  padding: 1rem;
   text-decoration: none;
 }
 
 .primary {
-  color: red;
+  background: var(--color-primary);
 }

@@ -1,10 +1,11 @@
 import React, {Component, PropTypes} from "react";
+import styles from 'global/Site.css';
 
 export default class AppContainer extends Component {
 	render () {
     const {children} = this.props
 		return (
-			<div>
+			<div className={styles.root}>
 				<main>
           <div>
   					<h1>Dat site do</h1>
