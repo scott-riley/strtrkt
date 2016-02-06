@@ -47,7 +47,7 @@ try {
 						<html lang="en-us">
 							<head>
 								<meta charset="utf-8">
-								<title>Features</title>
+								<title>Strtkt – we so startup m8s</title>
 								<link rel="shortcut icon" href="/favicon.ico">
 								<link rel="stylesheet" type="text/css" href="${webserver}/dist/app.css" />
 							</head>
