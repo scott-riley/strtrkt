@@ -16,14 +16,9 @@ Also big smooches to [Iest](https://github.com/iest) for help with webpack’s m
 - No more InlineStyle stuff, instead Components import their own CSS which gets namespaced all nice and shit
 - Separate containers and routes for Site and Application, letting you develop a marketing site and application in the same React app
 - Global components if you want to share anything between your site and app
-
-## Todo
-- [ ] clean stuff up
-- [ ] make sure CSS gets loaded server-side
-- [ ] set up CSS globals like variables and shit
-- [ ] add some form of grid system
-- [ ] make it actually usable as a baseline for projects
-- [ ] add common configs for postCSS etc. so you don’t have to keep changing both client and server webpack files
+- Lost Grid support because it just makes sense
+- Global CSS examples for sharing variables and modifiers between components
+- IK blue so everyone knows you’re a creative startup!!
 
 ## Things to look at and stuff
 
