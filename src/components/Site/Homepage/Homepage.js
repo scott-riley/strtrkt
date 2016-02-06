@@ -13,7 +13,7 @@ export default class Homepage extends Component {
         <Wrapper>
           <p className={m.beta}>Ello, dis is homepage</p>
         </Wrapper>
-        <div className={styles.row}>
+        <div className={[styles.row, m.mbalpha].join(' ')}>
           <Wrapper>
             <div className={styles.mainColumn}>
               Woahhhh column 1
@@ -23,7 +23,7 @@ export default class Homepage extends Component {
             </div>
           </Wrapper>
         </div>
-        <div className={styles.row}>
+        <div className={[styles.row, m.mbalpha].join(' ')}>
           <Wrapper>
             <div className={styles.thirds}>
               Cols are gr8

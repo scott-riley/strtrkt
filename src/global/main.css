@@ -3,16 +3,11 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 :root {
-	--gutter: 65px;
+	--gutter: 35px;
 }
 
-@lost gutter 65px;
+@lost gutter 35px;
 
 :global * {
   box-sizing: border-box;
-}
-
-:global body {
-  background: var(--color-background);
-  color: var(--color-body-copy);
 }

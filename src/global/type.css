@@ -5,5 +5,5 @@
 
 :global body {
   font-size: --font-size-base;
-  line-height:
+  line-height: 1.25rem;
 }

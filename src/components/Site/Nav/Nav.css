@@ -1,0 +1,30 @@
+.root {
+  background: white;
+  color: #444;
+  lost-utility: clearfix;
+  padding: 1rem 0;
+}
+
+.links {
+  lost-column: 4/8;
+  padding: 1rem;
+}
+
+.link {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.logo {
+  lost-column: 1/8;
+  text-align: left;
+  font-size: var(--font-size-zeta);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.cta {
+  lost-column: 3/8;
+  text-align: right;
+  padding: 1rem 0;
+}

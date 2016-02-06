@@ -1,8 +1,9 @@
 :root {
   --color-primary: red;
-  --color-secondary: blue;
+  --color-secondary: #002fa7;
   --color-background: #545454;
   --color-body-copy: #fafafa;
+
   --font-size-base: 16px;
   --font-size-alpha: 4.768rem;
   --font-size-beta: 3.815rem;
