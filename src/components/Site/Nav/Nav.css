@@ -3,6 +3,7 @@
   color: #444;
   lost-utility: clearfix;
   padding: 1rem 0;
+  border-bottom: 2px solid var(--color-secondary);
 }
 
 .links {

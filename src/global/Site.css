@@ -1,1 +1,5 @@
 @import './main.css';
+
+main {
+  min-height: 90vh;
+}

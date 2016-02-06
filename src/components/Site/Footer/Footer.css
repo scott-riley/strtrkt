@@ -1,0 +1,9 @@
+.root {
+  padding: 1rem 0;
+  border-top: 1px solid black;
+}
+
+.copyNotice {
+  font-size: var(--font-size-iota);
+  text-transform: uppercase;
+}
