@@ -3,4 +3,14 @@
   --color-secondary: blue;
   --color-background: #545454;
   --color-body-copy: #fafafa;
+  --font-size-base: 16px;
+  --font-size-alpha: 4.768rem;
+  --font-size-beta: 3.815rem;
+  --font-size-gamma: 3.052rem;
+  --font-size-delta: 2.441rem;
+  --font-size-epsilon: 1.953rem;
+  --font-size-zeta: 1.563rem;
+  --font-size-eta: 1.25rem;
+  --font-size-theta: 1rem;
+  --font-size-iota: 0.8rem;
 }

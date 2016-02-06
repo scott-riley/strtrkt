@@ -4,12 +4,13 @@ import Btn from 'components/Global/Btn/Btn';
 import Wrapper from 'components/Global/Wrapper/Wrapper';
 
 import styles from './Homepage.css';
+import m from 'global/modifiers';
 
 export default class Homepage extends Component {
   render() {
     return(
       <div id="homepage">
-        <p>Ello, dis is homepage</p>
+        <p className={m.beta}>Ello, dis is homepage</p>
         <div className={styles.row}>
           <Wrapper>
             <div className={styles.mainColumn}>

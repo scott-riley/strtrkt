@@ -1,4 +1,6 @@
 @import './variables.css';
+@import './type.css';
+
 :root {
 	--gutter: 65px;
 }

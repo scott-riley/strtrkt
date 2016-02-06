@@ -1,0 +1,477 @@
+@import './variables.css';
+
+.collapse {
+  padding: 0;
+}
+
+/* Typographic modifiers */
+.fsi { font-style: italic; }
+.fsn { font-style: normal; }
+
+/* Implicit weights (light, medium, bold, heavy) */
+.light { font-weight: 100; }
+.medium { font-weight: 400; }
+.bold { font-weight: 700; }
+.heavy { font-weight: 900; }
+
+/* Explicit weights */
+.fw100 { font-weight: 100; }
+.fw200 { font-weight: 200; }
+.fw300 { font-weight: 300; }
+.fw400 { font-weight: 400; }
+.fw500 { font-weight: 500; }
+.fw600 { font-weight: 600; }
+.fw700 { font-weight: 700; }
+.fw800 { font-weight: 800; }
+.fw900 { font-weight: 900; }
+
+/* Text decoration */
+.underline { text-decoration: underline; }
+.overline { text-decoration: overline; }
+.overunder { text-decoration: overline; text-decoration: underline; }
+.strike { text-decoration: line-through; }
+
+
+/*Font size modifiers*/
+.alpha {
+  font-size: var(--font-size-alpha);
+}
+
+.beta {
+  font-size: var(--font-size-beta);
+}
+
+.gamma {
+  font-size: var(--font-size-gamma);
+}
+
+.delta {
+  font-size: var(--font-size-delta);
+}
+
+.epsilon {
+  font-size: var(--font-size-epsilon);
+}
+
+.zeta {
+  font-size: var(--font-size-zeta);
+}
+
+.eta {
+  font-size: var(--font-size-eta);
+}
+
+.theta {
+  font-size: var(--font-size-theta);
+}
+
+.iota {
+  font-size: var(--font-size-iota);
+}
+
+/*
+* Rhythm modifiers
+* This is suuuuuuper long, should probs be a var map
+*/
+
+/* Margins */
+.ma0 {
+  margin: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mr0 {
+  margin-right: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.ml0 {
+  margin-left: 0;
+}
+
+.ma-alpha {
+  margin: var(--font-size-alpha);
+}
+
+.mt-alpha {
+  margin-top: var(--font-size-alpha);
+}
+
+.mr-alpha {
+  margin-right: var(--font-size-alpha);
+}
+
+.mb-alpha {
+  margin-bottom: var(--font-size-alpha);
+}
+
+.ml-alpha {
+  margin-left: var(--font-size-alpha);
+}
+
+.ma-beta {
+  margin: var(--font-size-beta);
+}
+
+.mt-beta {
+  margin-top: var(--font-size-beta);
+}
+
+.mr-beta {
+  margin-right: var(--font-size-beta);
+}
+
+.mb-beta {
+  margin-bottom: var(--font-size-beta);
+}
+
+.ml-beta {
+  margin-left: var(--font-size-beta);
+}
+
+.ma-gamma {
+  margin: var(--font-size-gamma);
+}
+
+.mt-gamma {
+  margin-top: var(--font-size-gamma);
+}
+
+.mr-gamma {
+  margin-right: var(--font-size-gamma);
+}
+
+.mb-gamma {
+  margin-bottom: var(--font-size-gamma);
+}
+
+.ml-gamma {
+  margin-left: var(--font-size-gamma);
+}
+
+.ma-delta {
+  margin: var(--font-size-delta);
+}
+
+.mt-delta {
+  margin-top: var(--font-size-delta);
+}
+
+.mr-delta {
+  margin-right: var(--font-size-delta);
+}
+
+.mb-delta {
+  margin-bottom: var(--font-size-delta);
+}
+
+.ml-delta {
+  margin-left: var(--font-size-delta);
+}
+
+.ma-epsilon {
+  margin: var(--font-size-epsilon);
+}
+
+.mt-epsilon {
+  margin-top: var(--font-size-epsilon);
+}
+
+.mr-epsilon {
+  margin-right: var(--font-size-epsilon);
+}
+
+.mb-epsilon {
+  margin-bottom: var(--font-size-epsilon);
+}
+
+.ml-epsilon {
+  margin-left: var(--font-size-epsilon);
+}
+
+.ma-zeta {
+  margin: var(--font-size-zeta);
+}
+
+.mt-zeta {
+  margin-top: var(--font-size-zeta);
+}
+
+.mr-zeta {
+  margin-right: var(--font-size-zeta);
+}
+
+.mb-zeta {
+  margin-bottom: var(--font-size-zeta);
+}
+
+.ml-zeta {
+  margin-left: var(--font-size-zeta);
+}
+
+.ma-eta {
+  margin: var(--font-size-eta);
+}
+
+.mt-eta {
+  margin-top: var(--font-size-eta);
+}
+
+.mr-eta {
+  margin-right: var(--font-size-eta);
+}
+
+.mb-eta {
+  margin-bottom: var(--font-size-eta);
+}
+
+.ml-eta {
+  margin-left: var(--font-size-eta);
+}
+
+.ma-theta {
+  margin: var(--font-size-theta);
+}
+
+.mt-theta {
+  margin-top: var(--font-size-theta);
+}
+
+.mr-theta {
+  margin-right: var(--font-size-theta);
+}
+
+.mb-theta {
+  margin-bottom: var(--font-size-theta);
+}
+
+.ml-theta {
+  margin-left: var(--font-size-theta);
+}
+
+.ma-iota {
+  margin: var(--font-size-iota);
+}
+
+.mt-iota {
+  margin-top: var(--font-size-iota);
+}
+
+.mr-iota {
+  margin-right: var(--font-size-iota);
+}
+
+.mb-iota {
+  margin-bottom: var(--font-size-iota);
+}
+
+.ml-iota {
+  margin-left: var(--font-size-iota);
+}
+
+/* Padding */
+.pa0 {
+  padding: 0;
+}
+
+.pt0 {
+  padding-top: 0;
+}
+
+.pr0 {
+  padding-right: 0;
+}
+
+.pb0 {
+  padding-bottom: 0;
+}
+
+.pl0 {
+  padding-left: 0;
+}
+
+.pa-alpha {
+  padding: var(--font-size-alpha);
+}
+
+.pt-alpha {
+  padding-top: var(--font-size-alpha);
+}
+
+.pr-alpha {
+  padding-right: var(--font-size-alpha);
+}
+
+.pb-alpha {
+  padding-bottom: var(--font-size-alpha);
+}
+
+.pl-alpha {
+  padding-left: var(--font-size-alpha);
+}
+
+.pa-beta {
+  padding: var(--font-size-beta);
+}
+
+.pt-beta {
+  padding-top: var(--font-size-beta);
+}
+
+.pr-beta {
+  padding-right: var(--font-size-beta);
+}
+
+.pb-beta {
+  padding-bottom: var(--font-size-beta);
+}
+
+.pl-beta {
+  padding-left: var(--font-size-beta);
+}
+
+.pa-gamma {
+  padding: var(--font-size-gamma);
+}
+
+.pt-gamma {
+  padding-top: var(--font-size-gamma);
+}
+
+.pr-gamma {
+  padding-right: var(--font-size-gamma);
+}
+
+.pb-gamma {
+  padding-bottom: var(--font-size-gamma);
+}
+
+.pl-gamma {
+  padding-left: var(--font-size-gamma);
+}
+
+.pa-delta {
+  padding: var(--font-size-delta);
+}
+
+.pt-delta {
+  padding-top: var(--font-size-delta);
+}
+
+.pr-delta {
+  padding-right: var(--font-size-delta);
+}
+
+.pb-delta {
+  padding-bottom: var(--font-size-delta);
+}
+
+.pl-delta {
+  padding-left: var(--font-size-delta);
+}
+
+.pa-epsilon {
+  padding: var(--font-size-epsilon);
+}
+
+.pt-epsilon {
+  padding-top: var(--font-size-epsilon);
+}
+
+.pr-epsilon {
+  padding-right: var(--font-size-epsilon);
+}
+
+.pb-epsilon {
+  padding-bottom: var(--font-size-epsilon);
+}
+
+.pl-epsilon {
+  padding-left: var(--font-size-epsilon);
+}
+
+.pa-zeta {
+  padding: var(--font-size-zeta);
+}
+
+.pt-zeta {
+  padding-top: var(--font-size-zeta);
+}
+
+.pr-zeta {
+  padding-right: var(--font-size-zeta);
+}
+
+.pb-zeta {
+  padding-bottom: var(--font-size-zeta);
+}
+
+.pl-zeta {
+  padding-left: var(--font-size-zeta);
+}
+
+.pa-eta {
+  padding: var(--font-size-eta);
+}
+
+.pt-eta {
+  padding-top: var(--font-size-eta);
+}
+
+.pr-eta {
+  padding-right: var(--font-size-eta);
+}
+
+.pb-eta {
+  padding-bottom: var(--font-size-eta);
+}
+
+.pl-eta {
+  padding-left: var(--font-size-eta);
+}
+
+.pa-theta {
+  padding: var(--font-size-theta);
+}
+
+.pt-theta {
+  padding-top: var(--font-size-theta);
+}
+
+.pr-theta {
+  padding-right: var(--font-size-theta);
+}
+
+.pb-theta {
+  padding-bottom: var(--font-size-theta);
+}
+
+.pl-theta {
+  padding-left: var(--font-size-theta);
+}
+
+.pa-iota {
+  padding: var(--font-size-iota);
+}
+
+.pt-iota {
+  padding-top: var(--font-size-iota);
+}
+
+.pr-iota {
+  padding-right: var(--font-size-iota);
+}
+
+.pb-iota {
+  padding-bottom: var(--font-size-iota);
+}
+
+.pl-iota {
+  padding-left: var(--font-size-iota);
+}
