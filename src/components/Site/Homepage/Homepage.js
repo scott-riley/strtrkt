@@ -10,7 +10,9 @@ export default class Homepage extends Component {
   render() {
     return(
       <div id="homepage">
-        <p className={m.beta}>Ello, dis is homepage</p>
+        <Wrapper>
+          <p className={m.beta}>Ello, dis is homepage</p>
+        </Wrapper>
         <div className={styles.row}>
           <Wrapper>
             <div className={styles.mainColumn}>
