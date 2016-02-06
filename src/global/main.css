@@ -1,4 +1,9 @@
 @import './variables.css';
+:root {
+	--gutter: 65px;
+}
+
+@lost gutter 65px;
 
 :global * {
   box-sizing: border-box;

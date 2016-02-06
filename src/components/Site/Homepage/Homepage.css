@@ -1,0 +1,30 @@
+/*This would likely go in a more global place, but just an example of lost innit m8s*/
+.row {
+  lost-utility: clearfix;
+}
+
+.thirds {
+  lost-column: 1/3;
+  border: 3px solid white;
+  padding: 3rem;
+  text-align: center;
+}
+
+.sixths {
+  lost-column: 1/6;
+  text-align: center;
+  border: 2px solid red;
+  color: red;
+}
+
+.mainColumn {
+  background: white;
+  color: black;
+  lost-column: 2/3;
+}
+
+.secondColumn {
+  background: green;
+  color: blue;
+  lost-column: 1/3;
+}

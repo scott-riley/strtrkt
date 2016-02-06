@@ -41,6 +41,8 @@ module.exports = {
 	postcss: [
     webpackPostcssTools.prependTildesToImports,
 
+		require('lost'),
+
     require('postcss-custom-properties')({
       variables: map.vars
     }),

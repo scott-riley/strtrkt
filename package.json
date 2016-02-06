@@ -41,6 +41,8 @@
     "koa": "1.1.2",
     "koa-proxy": "0.4.1",
     "koa-static": "2.0.0",
+    "lost": "^6.7.1",
+    "lost-grid": "^5.1.6",
     "normalize.css": "^3.0.3",
     "postcss-calc": "^5.2.0",
     "postcss-custom-media": "^5.0.1",

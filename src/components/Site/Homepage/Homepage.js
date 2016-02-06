@@ -1,14 +1,51 @@
 import React, {Component} from "react";
 import Btn from 'components/Global/Btn/Btn';
+import styles from './Homepage.css';
 
 export default class Homepage extends Component {
   render() {
     return(
       <div id="homepage">
         <p>Ello, dis is homepage</p>
-        <Btn href="/app" type="primary">
-          Go to app
-        </Btn>
+        <div className={styles.row}>
+          <div className={styles.mainColumn}>
+            Woahhhh column 1
+          </div>
+          <div className={styles.secondColumn}>
+            Ey woah column 2
+          </div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.thirds}>
+            Cols are gr8
+          </div>
+          <div className={styles.thirds}>
+            Like super gr8
+          </div>
+          <div className={styles.thirds}>
+            Thanks based Lost Grid
+          </div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.sixths}>
+            Can u
+          </div>
+          <div className={styles.sixths}>
+            see where
+          </div>
+          <div className={styles.sixths}>
+            this shit
+          </div>
+          <div className={styles.sixths}>
+            is going
+          </div>
+          <div className={styles.sixths}>
+            now
+          </div>
+          <div className={styles.sixths}>
+            m8s?
+          </div>
+        </div>
       </div>
     )
   }
