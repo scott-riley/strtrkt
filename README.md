@@ -35,6 +35,7 @@ It doesn’t stop you writing ‘global’, non-namespaced CSS, and it definitel
 - Your components have their own styles so you’re not combing through selectors to find the one line you need to change to make something red instead of blue.
 - Small components are as portable as you want them to be, as their CSS is always ‘just enough’ to style the component
 - Your CSS classes becomes close-to-immutable without having to maintain your namespacing yourself
+- You don’t have to keep thinking of creative things to name your ‘sub’ component classes because some other component is using that class. E.g. you can have a `.primary` selector in a `Btn` component that is totally different to a `.primary` selector in a `FlashMessage` component.
 - You can forget about BEM. Forever.
 
 ## Installation
