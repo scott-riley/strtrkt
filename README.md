@@ -7,6 +7,9 @@ React Isomorphic Starterkit Copyright © 2015, Rick Wong
 
 Also big smooches to [Iest](https://github.com/iest) for help with webpack’s magic fuckery.
 
+## Concepts and stuff
+Take a look at [LEARN.md](https://github.com/scott-riley/strtrkt/blob/master/LEARN.md) to get a basic overview of the setup here.
+
 ## Features
 
 - All the great stuff from [React Isomorphic Starterkit](https://github.com/RickWong/react-isomorphic-starterkit) including:
