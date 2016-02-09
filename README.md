@@ -1,4 +1,4 @@
-# Strtrkt
+# Strtrkt – because I’m too cool for vowels
 A semi-opinionated starting point for building multi-purpose apps with Isomorphic React and modular, component-specific CSS. I use this as a starting point for building apps where I want to develop my ‘marketing sites’ in the same app as my actual application. Because I’m lazy and sharing components is good for life.
 
 This is heavily based on [React Isomorphic Starterkit](https://github.com/RickWong/react-isomorphic-starterkit) and literally all credit should go over dem ways.
@@ -22,9 +22,6 @@ Take a look at [LEARN.md](https://github.com/scott-riley/strtrkt/blob/master/LEA
 - Lost Grid support because it just makes sense
 - Global CSS examples for sharing variables and modifiers between components
 - IK blue so everyone knows you’re a creative startup!!
-
-## Why Strtrkt?
-Because I’m so startup and too cool for vowels.
 
 ## Why use ‘Modular’ CSS?
 It’s nice to me. It makes sense to my brain. You might hate it. That’s cool too.
