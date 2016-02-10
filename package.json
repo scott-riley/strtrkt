@@ -1,24 +1,12 @@
 {
-  "name": "react-isomorphic-starterkit",
-  "description": "Isomorphic starterkit with server-side React rendering.",
-  "version": "5.1.3",
-  "license": "BSD-3-Clause",
+  "name": "strtrkt",
+  "description": "React Starterkit",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RickWong/react-isomorphic-starterkit.git"
+    "url": "https://github.com/scott-riley/strtrkt.git"
   },
-  "homepage": "https://github.com/RickWong/react-isomorphic-starterkit",
-  "keywords": [
-    "react",
-    "isomorphic",
-    "universal",
-    "starter",
-    "boilerplate",
-    "template",
-    "webpack",
-    "koa",
-    "transmit"
-  ],
+  "homepage": "https://github.com/scott-riley/strtrkt",
   "main": "dist/server.js",
   "scripts": {
     "start": "node node_modules/forever/bin/forever --minUptime 1000 --spinSleepTime 1000 -c \"node --harmony\" ./dist/server.js",
@@ -37,6 +25,7 @@
     "fetch-plus-bearerauth": "3.5.0",
     "fetch-plus-json": "3.6.0",
     "history": "1.17.0",
+    "html-dist": "^0.2.0",
     "isomorphic-fetch": "2.2.0",
     "koa": "1.1.2",
     "koa-proxy": "0.4.1",
