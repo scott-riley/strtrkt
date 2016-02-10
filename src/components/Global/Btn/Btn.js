@@ -6,7 +6,6 @@ export default class Btn extends Component {
     const {href, onClick, children, className} = this.props;
     const classNames = [
       s.root,
-      s[type],
       className
     ].join(' ');
     return (
