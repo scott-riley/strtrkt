@@ -23,7 +23,7 @@ export default class MainScreen extends Component {
         <p>
           Submitted? {submitted}
         </p>
-        <Btn onClick={this.handleSubmit} type="primary">
+        <Btn onClick={this.handleSubmit}>
           Do a submit!
         </Btn>
       </div>
