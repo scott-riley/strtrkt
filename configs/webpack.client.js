@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const cssLoaderConfig = 'modules&importLoaders=1&localIdentName=[name]-[local]-[hash:base64:5]!postcss';
 const webpackPostcssTools = require('webpack-postcss-tools');
 const map = webpackPostcssTools.makeVarMap('src/global/main.css');
@@ -22,6 +23,7 @@ module.exports = {
 		new webpack.optimize.DedupePlugin(),
 		new webpack.optimize.OccurenceOrderPlugin(),
 		new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}}),
+		new ExtractTextPlugin('app.css', {allChunks: true}),
 	],
 	module:  {
 		loaders: [
@@ -33,7 +35,7 @@ module.exports = {
 				exclude: /node_modules/
 			}, {
           test: /\.css$/,
-          loader: `style-loader!css-loader?${cssLoaderConfig}`,
+          loader: ExtractTextPlugin.extract('style-loader', `css-loader?${cssLoaderConfig}`)
       }
 		],
 		noParse: /\.min\.js/
