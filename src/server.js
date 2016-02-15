@@ -17,8 +17,6 @@ try {
 	const port     = process.env.PORT || 8000;
 	let   routes   = routesContainer;
 
-	console.log("HOSTNAME: ", process.env.PORT);
-
 	app.use(koaStatic("static"));
 
 	app.use(koaProxy({
