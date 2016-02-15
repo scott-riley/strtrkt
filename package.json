@@ -9,7 +9,7 @@
   "homepage": "https://github.com/scott-riley/strtrkt",
   "main": "dist/server.js",
   "scripts": {
-    "start": "\"node --harmony\" ./dist/server.js",
+    "start": "node --harmony ./dist/server.js",
     "build-server": "node node_modules/webpack/bin/webpack --colors --display-error-details --config configs/webpack.server.js",
     "build-client": "node node_modules/webpack/bin/webpack --colors --display-error-details --config configs/webpack.client.js",
     "build": "node node_modules/concurrently/src/main \"npm run build-server\" \"npm run build-client\"",
