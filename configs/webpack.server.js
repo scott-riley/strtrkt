@@ -29,6 +29,9 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.DefinePlugin({__CLIENT__: false, __SERVER__: true, __PRODUCTION__: true, __DEV__: false}),
+		new webpack.optimize.DedupePlugin(),
+		new webpack.optimize.OccurenceOrderPlugin(),
+		new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}}),
 		new ExtractTextPlugin('app.css', {allChunks: true}),
 	],
 	module:  {
