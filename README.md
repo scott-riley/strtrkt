@@ -1,5 +1,5 @@
 # Strtrkt – because I’m too cool for vowels
-A semi-opinionated starting point for building multi-purpose apps with Isomorphic React and modular, component-specific CSS. I use this as a starting point for building apps where I want to develop my ‘marketing sites’ in the same app as my actual application. Because I’m lazy and sharing components is good for life.
+A semi-opinionated starting point for building multi-purpose apps with Universal React and modular, component-specific CSS. I use this as a starting point for building apps where I want to develop my ‘marketing sites’ in the same app as my actual application. Because I’m lazy and sharing components is good for life.
 
 This is heavily based on [React Isomorphic Starterkit](https://github.com/RickWong/react-isomorphic-starterkit) and literally all credit should go over dem ways.
 
@@ -13,9 +13,11 @@ Take a look at [LEARN.md](https://github.com/scott-riley/strtrkt/blob/master/LEA
 ## Features
 
 - All the great stuff from [React Isomorphic Starterkit](https://github.com/RickWong/react-isomorphic-starterkit) including:
-  - Super nice npm run stuff
+  - Simple koa server for universal rendering
   - ES2015 + ES7 love with Babel
-  - Hot Reload
+  - Hot Module Reload
+- Heroku-ready for production deployment (almost, needs work)
+- Automatic gzip on server
 - Component-specific, namespaced CSS
 - Separation of ‘marketing’ site and application out-of-the-box
 - Convention for global Components for sharing between app and site
@@ -40,9 +42,9 @@ It doesn’t stop you writing ‘global’, non-namespaced CSS, and it definitel
 
 ## Installation
 
-In short: don’t (yet)
+I’m still working on getting this production-ready. I don’t recommend using it for production apps as there’s a few remaining issues, specifically with webpack file loading, that mean this is probably not quite ready for full-scale apps.
 
-If you wanna fuck around, go for it:
+If you do wanna fuck around, and sort your own loaders for things like images, svgs and fonts, go for it!
 
 Clone the repo then:
 
@@ -53,4 +55,28 @@ npm run watch
 
 ## Usage
 
-Run `npm run watch` in terminal. Try changing any of the example Components or Containers. Add your own Component with it’s own CSS file and include it in one of the parent components. See if you think modular CSS is all lovely and stuff.
+Run `npm run watch` in terminal. Try changing any of the example Components or Containers. Add your own Component with its own CSS file and include it in one of the parent components. See if you think modular CSS is all lovely and stuff.
+
+## Production
+
+If you want to test for production:
+
+```bash
+npm run build
+npm run start
+```
+
+or if you ever need to explicitly set the Node env:
+
+```bash
+npm run build
+NODE_EVN=production node --harmony dist/server.js
+```
+
+## Deployment
+
+*Needs work* – I’ve tested Heroku deployment and fixed any issues I’ve encountered, although it’s far from robust in terms of production checks.
+
+Heroku will automatically run any postinstall tasks in `package.json` and run `npm start` afterwards. Currently the only postinstall task is `npm run build` which will build any static files. This means Heroku will mimic the `npm run build && npm run start` tasks used for local production checks.
+
+For other hosting/auto-deployment environments, I haven’t been able to test, so you’re on your own soz.
