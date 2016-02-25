@@ -70,7 +70,7 @@ or if you ever need to explicitly set the Node env:
 
 ```bash
 npm run build
-NODE_EVN=production node --harmony dist/server.js
+NODE_ENV=production node --harmony dist/server.js
 ```
 
 ## Deployment
@@ -78,5 +78,7 @@ NODE_EVN=production node --harmony dist/server.js
 *Needs work* – I’ve tested Heroku deployment and fixed any issues I’ve encountered, although it’s far from robust in terms of production checks.
 
 Heroku will automatically run any postinstall tasks in `package.json` and run `npm start` afterwards. Currently the only postinstall task is `npm run build` which will build any static files. This means Heroku will mimic the `npm run build && npm run start` tasks used for local production checks.
+
+To make the Koa server play nice, you should set a `HOSTNAME` config/environment variable (e.g. `ilovescott.herokuapp.com` or `ilovescott.com`); if you’re not using Heroku, you _might_ have to set a `PORT` environment variable too. Heroku automatically sets this as the server port changes over time.
 
 For other hosting/auto-deployment environments, I haven’t been able to test, so you’re on your own soz.
