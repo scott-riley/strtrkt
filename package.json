@@ -53,7 +53,6 @@
     "postcss-loader": "^0.8.0",
     "react": "0.14.6",
     "react-dom": "0.14.6",
-    "react-inline-css": "2.0.1",
     "react-router": "1.0.3",
     "react-transmit": "3.1.6",
     "style-loader": "^0.13.0",
