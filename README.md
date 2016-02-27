@@ -1,5 +1,5 @@
 # Strtrkt – because I’m too cool for vowels
-A semi-opinionated starting point for building multi-purpose apps with Universal React and modular, component-specific CSS. I use this as a starting point for building apps where I want to develop my ‘marketing sites’ in the same app as my actual application. Because I’m lazy and sharing components is good for life.
+A semi-opinionated starting point for building multi-purpose apps with Universal React and interoperable, component-specific CSS. I use this as a starting point for building apps where I want to develop my ‘marketing sites’ in the same app as my actual application. Because I’m lazy and sharing components is good for life.
 
 This is heavily based on [React Isomorphic Starterkit](https://github.com/RickWong/react-isomorphic-starterkit) and literally all credit should go over dem ways.
 
@@ -25,8 +25,10 @@ Take a look at [LEARN.md](https://github.com/scott-riley/strtrkt/blob/master/LEA
 - Global CSS examples for sharing variables and modifiers between components
 - IK blue so everyone knows you’re a creative startup!!
 
-## Why use ‘Modular’ CSS?
+## Why is ur CSS so fuckin weird?
 It’s nice to me. It makes sense to my brain. You might hate it. That’s cool too.
+
+I could write thousands of words on this; but Glen Madden’s article on [Interoperable CSS](http://glenmaddern.com/articles/interoperable-css) is just perfect x
 
 ## Yeah but what is it m8?
 In short: you write CSS that is specific to a component. This CSS gets automatically namespaced for that component and rarely gets used elsewhere. This doesn’t completely fix cascade issues but it definitely mitigates them.
