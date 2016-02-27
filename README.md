@@ -28,7 +28,7 @@ Take a look at [LEARN.md](https://github.com/scott-riley/strtrkt/blob/master/LEA
 ## Why is ur CSS so fuckin weird?
 It’s nice to me. It makes sense to my brain. You might hate it. That’s cool too.
 
-I could write thousands of words on this; but Glen Madden’s article on [Interoperable CSS](http://glenmaddern.com/articles/interoperable-css) is just perfect x
+I could write thousands of words on this; but Glen Maddern’s article on [Interoperable CSS](http://glenmaddern.com/articles/interoperable-css) is just perfect x
 
 ## Yeah but what is it m8?
 In short: you write CSS that is specific to a component. This CSS gets automatically namespaced for that component and rarely gets used elsewhere. This doesn’t completely fix cascade issues but it definitely mitigates them.
