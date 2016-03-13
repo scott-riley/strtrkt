@@ -13,7 +13,7 @@
     "build-server": "node node_modules/webpack/bin/webpack --colors --display-error-details --config configs/webpack.server.js",
     "build-client": "node node_modules/webpack/bin/webpack --colors --display-error-details --config configs/webpack.client.js",
     "build": "node node_modules/concurrently/src/main \"npm run build-server\" \"npm run build-client\"",
-    "watch-server": "node node_modules/webpack/bin/webpack --watch --verbose --colors --display-error-details --config configs/webpack.server-watch.js",
+    "watch-server": "node node_modules/webpack/bin/webpack --watch --config configs/webpack.server-watch.js",
     "watch-server-start": "node node_modules/just-wait --pattern \"dist/*.js\" && npm run start",
     "watch-client": "node node_modules/webpack-dev-server/bin/webpack-dev-server --config configs/webpack.client-watch.js",
     "watch": "node node_modules/concurrently/src/main --kill-others \"npm run watch-server-start\" \"npm run watch-server\" \"npm run watch-client\"",

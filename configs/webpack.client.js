@@ -10,7 +10,7 @@ module.exports = {
 	cache:   false,
 	context: __dirname,
 	debug:   false,
-	devtool: false,
+	devtool: "eval-cheap-module-source-map",
 	entry:   ["../src/client"],
 	output:  {
 		path:          path.join(__dirname, "../static/dist"),
