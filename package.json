@@ -17,6 +17,7 @@
     "watch-server-start": "node node_modules/just-wait --pattern \"dist/*.js\" && npm run start",
     "watch-client": "webpack-dev-server --config configs/webpack.client-watch.js",
     "watch": "concurrently --kill-others \"npm run watch-server-start\" \"npm run watch-server\" \"npm run watch-client\"",
+    "clean": "rm -rf dist/* && rm -rf static/dist/*",
     "postinstall": "npm run build"
   },
   "dependencies": {
