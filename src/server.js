@@ -23,7 +23,7 @@ try {
   app.use(function *(next) {
     yield ((callback) => {
       const webserver = __PRODUCTION__ ? "" : `//${this.hostname}:8080`;
-      const location  = const location  = this.path;
+      const location  = this.path;
       const styleTag  = __PRODUCTION__ ? `<link rel="stylesheet" type="text/css" href="${webserver}/dist/app.css" />` : "";
 
       ReactRouter.match({routes, location}, (error, redirectLocation, renderProps) => {
