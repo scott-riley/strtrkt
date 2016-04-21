@@ -41,3 +41,9 @@ Libraries, loaders and love. Some coded into the app; lots of external ones to e
 - PostCSS - An also [absolutely awesome](https://github.com/postcss/postcss) CSS tool, does lots of the heavy lifting (thanks to a few dope plugins) such as auto-prefixing our CSS, transpiling future syntax and, most importantly for this kit, namespacing and compiling our component-specific CSS.
 
 I’m totally open to adding more or removing stuff here if people actually start using this and get annoyed at lack of/too many helpers/examples/default components
+
+## Static files
+
+If you need to add any static files like images etc. and don’t want to deal with Webpack loaders or anything silly, the `static` folder acts as a root folder when you watch locally or deploy to production, so just chuck your files in there.
+
+For example, if your production server is `ilovescott.com` and you have a `scott+me-doing-a-kiss.jpg` in an `images` folder inside `static`, it’ll be available at `ilovescott.com/images/scott+me-doing-a-kiss.jpg` – this is my preferred method of adding images because it Just Works™.
