@@ -6,7 +6,7 @@ const cssLoaderConfig = 'modules&importLoaders=1&localIdentName=[name]-[local]-[
 
 config.cache   = true;
 config.debug   = true;
-config.devtool = "eval-cheap-module-source-map";
+config.devtool = "cheap-source-map";
 
 config.entry.unshift(
 	"webpack-dev-server/client?http://" + hostname + ":" + port,
