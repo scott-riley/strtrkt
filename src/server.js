@@ -7,6 +7,7 @@ import React from "react";
 import ReactDOM from "react-dom/server";
 import * as ReactRouter from "react-router";
 import Transmit from "react-transmit";
+import Helmet from "react-helmet";
 
 import routesContainer from "containers/routes";
 
@@ -38,12 +39,13 @@ try {
         }
 
         Transmit.renderToString(ReactRouter.RouterContext, renderProps).then(({reactString, reactData}) => {
+          let head = Helmet.rewind();
           let template = (
             `<!doctype html>
             <html lang="en-us">
               <head>
                 <meta charset="utf-8">
-                <title>Strtkt – we so startup m8s</title>
+                ${head.title.toString()}
                 <link rel="shortcut icon" href="/favicon.ico">
                 ${styleTag}
               </head>

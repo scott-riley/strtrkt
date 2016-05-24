@@ -54,6 +54,7 @@
     "postcss-loader": "^0.8.0",
     "react": "0.14.7",
     "react-dom": "0.14.7",
+    "react-helmet": "^3.1.0",
     "react-router": "2.0.0",
     "react-transmit": "3.1.7",
     "style-loader": "^0.13.0",
