@@ -46,6 +46,7 @@ try {
               <head>
                 <meta charset="utf-8">
                 ${head.title.toString()}
+                ${head.meta.toString()}
                 <link rel="shortcut icon" href="/favicon.ico">
                 ${styleTag}
               </head>
