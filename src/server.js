@@ -17,7 +17,7 @@ try {
   const port     = process.env.PORT || 8000;
   let   routes   = routesContainer;
 
-	app.use(compressor());
+  app.use(compressor());
 
   app.use(koaStatic("static"));
 

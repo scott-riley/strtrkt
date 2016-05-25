@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 
-import Btn from 'components/Global/Btn/Btn';
-import Wrapper from 'components/Global/Wrapper/Wrapper';
+import Btn from "components/Global/Btn/Btn";
+import Wrapper from "components/Global/Wrapper/Wrapper";
 
-import s from './Nav.css'
+import s from "./Nav.css"
 
 export default class Nav extends Component {
   render() {

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Btn from 'components/Global/Btn/Btn';
+import Btn from "components/Global/Btn/Btn";
 
 export default class MainScreen extends Component {
   constructor(props) {
@@ -10,10 +10,10 @@ export default class MainScreen extends Component {
     };
   }
   handleSubmit() {
-    this.state.submitted === 'Yeahhhh' ?
-      this.setState({submitted: 'Nope'})
+    this.state.submitted === "Yeahhhh" ?
+      this.setState({submitted: "Nope"})
     :
-      this.setState({submitted: 'Yeahhhh'})
+      this.setState({submitted: "Yeahhhh"})
   }
   render() {
     const {submitted} = this.state;

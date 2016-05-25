@@ -1,10 +1,10 @@
 import React, {Component} from "react";
 
-import Btn from 'components/Global/Btn/Btn';
-import Wrapper from 'components/Global/Wrapper/Wrapper';
+import Btn from "components/Global/Btn/Btn";
+import Wrapper from "components/Global/Wrapper/Wrapper";
 
-import styles from './Homepage.css';
-import m from 'global/modifiers';
+import styles from "./Homepage.css";
+import m from "global/modifiers";
 
 export default class Homepage extends Component {
   render() {
@@ -13,7 +13,7 @@ export default class Homepage extends Component {
         <Wrapper>
           <p className={m.beta}>Ello, dis is homepage</p>
         </Wrapper>
-        <div className={[styles.row, m.mbalpha].join(' ')}>
+        <div className={[styles.row, m.mbalpha].join(" ")}>
           <Wrapper>
             <div className={styles.mainColumn}>
               Woahhhh column 1
@@ -23,7 +23,7 @@ export default class Homepage extends Component {
             </div>
           </Wrapper>
         </div>
-        <div className={[styles.row, m.mbalpha].join(' ')}>
+        <div className={[styles.row, m.mbalpha].join(" ")}>
           <Wrapper>
             <div className={styles.thirds}>
               Cols are gr8
